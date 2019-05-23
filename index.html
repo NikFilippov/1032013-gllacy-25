@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header class="maine-header">
@@ -10,15 +12,40 @@
     <a class="main-header-logo">
     <img src="img/logo.svg" width="92.34" height="32" alt="логотип glacyshop">
   </a>
-    <ul class="site-navigation">
+    <ul class="main-menu">
       <li><a href="catalog.html">Каталог</a></li>
+        <ul class="sub-menu">
+          <li><a href="#1">Новинки</a></li>
+          <li><a href="#2">Сливочное</a></li>
+          <li><a href="#3">Щербеты</a></li>
+          <li><a href="#3">Фруктовый лёд</a></li>
+          <li><a href="#3">Мелорин</a></li>
+        </ul>
       <li><a href="delivery.html">Доставка и оплата</a></li>
       <li><a href="company.html">О Компании</a></li>
     </ul>
     <ul class="user-navigation">
-      <li class="search-link"><a href="search.html"><a href="search.html"><img src="img/loupe.svg" width="17" height="17" alt="поиск">поиск</a></li>
-      <li class="login-link"><a href="login.html"><src="img/enter.svg" width="21" height="19" alt="вход">Вход</a></li>
-      <li class="basket-link"><a href="basket.html"><src="img/basket.svg" width="21" height="20" alt="корзина">Корзина</a></li>
+      <ul>
+      <li class="search-link"><a href="search.html"><img src="img/loupe.svg" width="17" height="17" alt="поиск">поиск</a></li>
+      <li><input type="text" name="search" placeholder="Что ищем?"></li>
+      </ul>
+      <ul>
+      <li class="login-link"><a href="login.html"><img src="img/entrance.svg" width="21" height="19" alt="вхо">Вход</a></li>
+        <ul>
+          <li><input type="text" name="mail" placeholder="Электронная почта"></li>
+          <li><input type="text" name="password" placeholder="пароль"></li>
+          <li><input type="submit" value="Войти"></li>
+          <li><a href="forgotpassword.html">Забыл пароль</a></li>
+          <li><a href="registration.html">Новая регистрация</a></li>
+        </ul>
+      <li class="basket-link"><a href="basket.html"><img src="img/basket.svg" width="21" height="20" alt="корзина">Корзина</a></li>
+    </ul>
+    <ul>
+      <li><h1>Мы обязательно вам ответим!</h1></li>
+      <li><input type="text" name="name" placeholder="Как вас зовут"></li>
+      <li><input type="text" name="answer" placeholder="Ваша почта для ответа"></li>
+      <li><textarea name="comment" id="comment-field" rows="20">Напишите что-нибудь...</textarea></li>
+      <li><input type="submit" value="Отправить"></li>
     </ul>
     <p>
   <span>c 10 до 20, ежедневно</span>
@@ -42,6 +69,10 @@
 </section>
 <section class="mailing">
   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не сласть всякой ненужной ерунды. Честно=)</p>
+   <ul>
+     <li><input type="text" name="mail" placeholder="Электронная почта"></li>
+     <li><input type="submit" value="Отправить"></li>
+   </ul>
   <p>Электронная почта</p>
   <p>Отправить</p>
 </section>

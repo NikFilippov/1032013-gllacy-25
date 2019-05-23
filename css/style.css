@@ -1,0 +1,10 @@
+.main-menu a:hover {
+  background-color: #f8f7f4;
+
+  .main-menu .sub-menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f8f7f4;
+}
