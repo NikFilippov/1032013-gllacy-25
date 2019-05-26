@@ -26,26 +26,18 @@
     </ul>
     <ul class="user-navigation">
       <ul>
-      <li class="search-link"><a href="search.html"><img src="img/loupe.svg" width="17" height="17" alt="поиск">поиск</a></li>
-      <li><input type="text" name="search" placeholder="Что ищем?"></li>
+      <li class="search-link"><a href="search.html">поиск<input type="search" name="search" placeholder="Что ищем?"></li>
       </ul>
       <ul>
-      <li class="login-link"><a href="login.html"><img src="img/entrance.svg" width="21" height="19" alt="вхо">Вход</a></li>
-        <ul>
-          <li><input type="text" name="mail" placeholder="Электронная почта"></li>
-          <li><input type="text" name="password" placeholder="пароль"></li>
-          <li><input type="submit" value="Войти"></li>
-          <li><a href="forgotpassword.html">Забыл пароль</a></li>
-          <li><a href="registration.html">Новая регистрация</a></li>
-        </ul>
+      <li class="login-link"><a href="login.html">Вход</a></li>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="mail" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="пароль">
+            <input type="submit" value="Войти">
+            <a href="forgotpassword.html">Забыл пароль</a>
+            <a href="registration.html">Новая регистрация</a>
+        </form>
       <li class="basket-link"><a href="basket.html"><img src="img/basket.svg" width="21" height="20" alt="корзина">Корзина</a></li>
-    </ul>
-    <ul>
-      <li><h1>Мы обязательно вам ответим!</h1></li>
-      <li><input type="text" name="name" placeholder="Как вас зовут"></li>
-      <li><input type="text" name="answer" placeholder="Ваша почта для ответа"></li>
-      <li><textarea name="comment" id="comment-field" rows="20">Напишите что-нибудь...</textarea></li>
-      <li><input type="submit" value="Отправить"></li>
     </ul>
     <p>
   <span>c 10 до 20, ежедневно</span>
@@ -69,10 +61,10 @@
 </section>
 <section class="mailing">
   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не сласть всякой ненужной ерунды. Честно=)</p>
-   <ul>
-     <li><input type="text" name="mail" placeholder="Электронная почта"></li>
-     <li><input type="submit" value="Отправить"></li>
-   </ul>
+   <form action="https://echo.htmlacademy.ru" method="post">
+     <input type="email" name="mail" placeholder="Электронная почта">
+     <input type="submit" value="Отправить">
+   </form>
   <p>Электронная почта</p>
   <p>Отправить</p>
 </section>
@@ -98,6 +90,15 @@
 <a class="companion" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy">Сделано в HTML academy 2017</a>
 </p>
 </footer>
+<form action="https://echo.htmlacademy.ru" method="post">
+   <fieldset>
+      <h3>Мы обязательно вам ответим!</h3>
+      <input type="text" name="name" placeholder="Как вас зовут">
+      <input type="mail" name="answer" placeholder="Ваша почта для ответа">
+      <textarea name="comment" id="comment-field" rows="20">Напишите что-нибудь...</textarea>
+    <input type="submit" value="Отправить">
+   </fieldset>
+ </form>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 
   </body>

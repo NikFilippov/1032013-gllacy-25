@@ -1,6 +1,11 @@
 .main-menu a:hover {
   background-color: #f8f7f4;
-
+}
+.main-menu > li {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
   .main-menu .sub-menu {
   position: absolute;
   margin: 0;

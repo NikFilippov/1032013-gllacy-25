@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <header class="maine-header">
@@ -10,17 +12,38 @@
     <a class="main-header-logo">
     <img src="img/logo.svg" width="154" height="64" alt="логотип glacyshop">
   </a>
-    <ul class="site-navigation">
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="delivery.html">Доставка и оплата</a></li>
-      <li><a href="company.html">О Компании</a></li>
-    </ul>
-    <ul class="user-navigation">
-      <li class="search-link"><a href="search.html"><img src="img/loupe.svg" width="17" height="17" alt="поиск">поиск</a></li>
-      <li class="login-link"><a href="login.html"><img src="img/entrance.svg" width="21" height="19" alt="вход">Вход</a></li>
-      <li class="basket-link"><a href="basket.html"><img src="img/basket.svg" width="21" height="20" alt="корзина">Корзина</a></li>
-
-    </ul>
+  <ul class="main-menu">
+    <li><a href="catalog.html">Каталог</a></li>
+      <ul class="sub-menu">
+        <li><a href="#1">Новинки</a></li>
+        <li><a href="#2">Сливочное</a></li>
+        <li><a href="#3">Щербеты</a></li>
+        <li><a href="#3">Фруктовый лёд</a></li>
+        <li><a href="#3">Мелорин</a></li>
+      </ul>
+    <li><a href="delivery.html">Доставка и оплата</a></li>
+    <li><a href="company.html">О Компании</a></li>
+  </ul>
+  <ul>
+  <li class="search-link"><a href="search.html">поиск<input type="search" name="search" placeholder="Что ищем?"></li>
+  </ul>
+  <ul>
+  <li class="login-link"><a href="login.html">Вход</a></li>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="email" name="mail" placeholder="Электронная почта">
+        <input type="password" name="password" placeholder="пароль">
+        <input type="submit" value="Войти">
+        <a href="forgotpassword.html">Забыл пароль</a>
+        <a href="registration.html">Новая регистрация</a>
+    </form>
+    <ul class="main-menu">
+      <li class="basket-link"><a href="basket.html">Корзина</li>
+        <ul class="sub-menu">
+          <li><a href=#>Пломбир с апельсиновым джемом  1,5кг х 200руб  300 руб</a></li>
+          <li><a href=#>Клубничный пломбир с присыпкой из белого шоколада  1,5кг х 300руб  450руб</a></li>
+          <p> Итого: 750 руб</p>
+          <input type="submit" value="Оформить заказ">
+        </ul>
       </nav>
   <p>
 <span>c 10 до 20, ежедневно</span>
