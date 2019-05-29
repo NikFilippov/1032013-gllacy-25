@@ -3,64 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="fonts/3955-webfont.woff2">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
       </head>
   <body>
 <header class="maine-header">
-  <nav class="main-navigatio">
+  <nav class="main-navigation">
     <a class="main-header-logo">
-    <img src="img/logo.svg" width="154" height="64" alt="логотип glacyshop">
+    <img src="img/logo-gllacy.svg" width="154" height="64" alt="логотип glacyshop">
   </a>
   <ul class="main-menu">
     <li><a href="catalog.html">Каталог</a></li>
       <ul class="sub-menu">
-        <li><a href="#1">Новинки</a></li>
-        <li><a href="#2">Сливочное</a></li>
-        <li><a href="#3">Щербеты</a></li>
-        <li><a href="#3">Фруктовый лёд</a></li>
-        <li><a href="#3">Мелорин</a></li>
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Сливочное</a></li>
+        <li><a href="#">Щербеты</a></li>
+        <li><a href="#">Фруктовый лёд</a></li>
+        <li><a href="#">Мелорин</a></li>
       </ul>
-    <li><a href="delivery.html">Доставка и оплата</a></li>
-    <li><a href="company.html">О Компании</a></li>
-  </ul>
-  <ul>
-  <li class="search-link"><a href="search.html">поиск<form><input type="search" name="search" placeholder="Что ищем?"></form></li>
-  </ul>
-  <ul>
-  <li class="login-link"><a href="login.html">Вход</a>
-    <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="email" name="mail" placeholder="Электронная почта">
-        <input type="password" name="password" placeholder="пароль">
-        <input type="submit" value="Войти">
-        <a href="forgotpassword.html">Забыл пароль</a>
-        <a href="registration.html">Новая регистрация</a>
-    </form></li>
+      <li><a href="delivery.html">Доставка и оплата</a></li>
+      <li><a href="company.html">О Компании</a></li>
+    </ul>
+    <ul class="user-navigation">
+        <li class="search-link"><a href="search.html">поиск</a><form><input type="search" name="search" placeholder="Что ищем?"></form></li>
+    </ul>
+      <ul>
+      <li class="login-link"><a href="login.html"></a>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="mail" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="пароль">
+            <input type="submit" value="Вход" class="button">
+            <a href="forgotpassword.html">Забыл пароль</a>
+            <a href="registration.html">Новая регистрация</a>
+        </form>
+      </li>
     <ul class="main-menu">
       <li class="basket-link"><a href="basket.html">Корзина</li>
         <ul class="sub-menu">
           <li>
-            <form class="button" action="index.html" method="post">
-              <input type="button" alt="исключить" value="X">
-            </form>
+            <input type="button" alt="исключить" value="X" class="esc">
             <a><img src="img/mini-icecreame-1.jpg" width="33" height="33" alt="вид мороженного"></a>
             <a href=#>Пломбир с апельсиновым джемом  1,5кг х 200руб  300 руб</a>
           </li>
           <li>
-            <form class="button" action="index.html" method="post">
-              <input type="button" alt="исключить" value="X">
-            </form>
+            <input type="button" alt="исключить" value="X">
             <a><img src="img/mini-icecreame-2.jpg" width="33" height="33" alt="вид мороженного"></a>
             <a href=#>Клубничный пломбир с присыпкой из белого шоколада  1,5кг х 300руб  450руб</a></li>
           <p> Итого: 750 руб</p>
           <a href=#>Оформить заказ"</a>
         </ul>
       </nav>
-  <p>
-<span>c 10 до 20, ежедневно</span>
-<span>8 812 450-25-25</span>
-  </p>
+      <p class="data">
+        <span>c 10 до 20, ежедневно</span>
+      </p>
+      <p class="adress">
+        <span>8 812 450-25-25</span>
+      </p>
   </header>
 <main class="content">
   <ul class="navigation">
@@ -72,7 +71,7 @@
 <section class="creamy">
 <ul class="creamy-list">
   <li class="creamy-item">
-    <a><img src="img/icecream-1.jpg" width="267" height="267" alt="вид мороженного"></a>
+    <a><img src="img/icecream-1.jpg" width="267" height="267" alt="вид мороженного" class="creamy"></a>
     <span>310Р/кг</span>
 <h2><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
 </li>
@@ -133,17 +132,16 @@
 </li>
 </main>
 <footer class="main-footer">
-  <div class="footer-social">
-    <ul>
-        <li><a class="social-button" href="#"><src="img/twitter.svg" width="32" height="32" alt="твиттер"></a></li>
-        <li><a class="social-button" href="#"><src="img/instagram.svg" width="32" height="32" alt="инстаграмм"></a></li>
-        <li><a class="social-button" href="#"><src="img/fb.svg" width="32" height="32" alt="фэйсбук"></a></li>
-<li><a class="social-button" href="#"><img src="img/vkontakte.svg" width="38" height="38" alt="вконтакте"></a></li>
-        <li><a class="social-button" href="#"><src="img/vk.svg" width="32" height="32" alt="вконтакте"></a></li>
-    </ul>
+  div class="footer-social">
+  <ul class="social">
+    <li><a class="twitter-button" href="www.twitter.com" alt="твиттер">твитетр</a></li>
+    <li><a class="instagram-button" href="www.instagram.com" alt="инстаграмм">инстаграмм</a></li>
+    <li><a class="facebook-button" href="www.facebook.com" alt="фэйсбук">фэисбук</a></li>
+    <li><a class="vk-button" href="www.vk.com" alt="вконтакте">вк</a></li>
+  </ul>
   </div>
 <div class="footer-documents">
-  <ul>
+  <ul class="documents">
 <li><a сclass="documents-button" href="production.html">О производстве</Li>
 <li><a сclass="documents-button" href="provider.html"><src="img/heart.svg" width="15" height="13" alt="сердце">Для поставщиков</a></li>
 <li><a сclass="documents-button" href="documents.html">Наши документы</a></li>
