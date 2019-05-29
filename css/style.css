@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .main-navigation {
   font-size: 16px;
   color:#ffffff;
@@ -86,14 +87,19 @@ a {
    line-height:24px;
  }
 
-h1 {
+.icecream-shop {
   font-size: 24px;
   line-height:30px;
   color: #323232;
   }
 
-.features-list,
-h2 {
+.features-list {
+  font-size: 16px;
+  line-height:22px;
+  color: #323232;
+}
+
+.newsblog {
   font-size: 16px;
   line-height:22px;
   color: #323232;
@@ -104,7 +110,7 @@ h2 {
   line-height:30px;
   }
 
-a,.ways {
+.ways {
   list-style: none;
   color:#323232;
 }
@@ -129,12 +135,15 @@ a,.ways {
 .intelligence {
   background-color: #eee2c6;
   background-image: url("../img/wafer.jpg");
+  min-height: 305px;
   background-position: 0 0;
   background-repeat: repeat;
 }
+
 .news {
   background-color: #ffffff;
   background-image: url("../img/strawberry-background.jpg");
+  min-height: 220px;
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -142,6 +151,7 @@ a,.ways {
 .mailing {
   background-color: #ffffff;
   background-image: url("../img/mail.jpg");
+  min-height: 220px;
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -238,7 +248,7 @@ a,.ways {
 
 
 
-h3 {
+.answer {
   font-size: 24px;
   line-height:28px;
   color: #323232;
@@ -266,6 +276,61 @@ h3 {
   border-radius: 40px;
   background-color: #f16542;
   }
+
+  .basket-menu a:hover
+  .basket-menu a:focus {
+    background-color: #f8f7f4;
+    list-style: none;
+  }
+
+  .basket-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+    .basket-menu .sub-menu-basket {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f8f7f4;
+  }
+
+  .sub-menu-basket {
+    font-size: 14px;
+    line-height:16px;
+    color:#323232;
+  }
+
+.creamy-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+
+
+  .order {
+    text-align: center;
+    color:#323232;
+    font-size: 18px;
+    line-height:24px;
+
+    display: inline-block;
+    margin: 20px;
+    padding: 25px 70px;
+    border-radius: 40px;
+    background-color: #a1b4a9;
+    }
+
+
+
+
 
 
 /* .main-navigation a:hover,

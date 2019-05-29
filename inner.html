@@ -15,13 +15,13 @@
   </a>
   <ul class="main-menu">
     <li><a href="catalog.html">Каталог</a></li>
-      <ul class="sub-menu">
+      <li><ul class="sub-menu">
         <li><a href="#">Новинки</a></li>
         <li><a href="#">Сливочное</a></li>
         <li><a href="#">Щербеты</a></li>
         <li><a href="#">Фруктовый лёд</a></li>
         <li><a href="#">Мелорин</a></li>
-      </ul>
+      </ul></li>
       <li><a href="delivery.html">Доставка и оплата</a></li>
       <li><a href="company.html">О Компании</a></li>
     </ul>
@@ -37,21 +37,21 @@
             <a href="forgotpassword.html">Забыл пароль</a>
             <a href="registration.html">Новая регистрация</a>
         </form>
-      </li>
-    <ul class="main-menu">
-      <li class="basket-link"><a href="basket.html">Корзина</li>
-        <ul class="sub-menu">
-          <li>
-            <input type="button" alt="исключить" value="X" class="esc">
+      </li></ul>
+      <ul class="basket-menu">
+        <li class="basket-link"><a href="basket.html">Корзина</a></li>
+        <li>
+          <ul class="sub-menu-basket">
+             <li><button type="button" value="X" class="exclude">Х</button>
             <a><img src="img/mini-icecreame-1.jpg" width="33" height="33" alt="вид мороженного"></a>
-            <a href=#>Пломбир с апельсиновым джемом  1,5кг х 200руб  300 руб</a>
-          </li>
-          <li>
-            <input type="button" alt="исключить" value="X">
+            <a href=#>Пломбир с апельсиновым джемом  1,5кг х 200руб  300 руб</a></li>
+            <li><button type="button" value="X" class="exclude">Х</button>
             <a><img src="img/mini-icecreame-2.jpg" width="33" height="33" alt="вид мороженного"></a>
             <a href=#>Клубничный пломбир с присыпкой из белого шоколада  1,5кг х 300руб  450руб</a></li>
-          <p> Итого: 750 руб</p>
-          <a href=#>Оформить заказ"</a>
+           </ul>
+         </li>
+          <li> Итого: 750 руб</li>
+          <li><button type="button" value="Оформить заказ" class="order">Оформить заказ</button></li>
         </ul>
       </nav>
       <p class="data">
@@ -130,24 +130,26 @@
   <span>420Р/кг</span>
 <h2><a href="#">Сливочное с мятным сиропом</a></h2>
 </li>
+</ul>
+</section>
 </main>
 <footer class="main-footer">
-  div class="footer-social">
+  <div class="footer-social">
   <ul class="social">
-    <li><a class="twitter-button" href="www.twitter.com" alt="твиттер">твитетр</a></li>
-    <li><a class="instagram-button" href="www.instagram.com" alt="инстаграмм">инстаграмм</a></li>
-    <li><a class="facebook-button" href="www.facebook.com" alt="фэйсбук">фэисбук</a></li>
-    <li><a class="vk-button" href="www.vk.com" alt="вконтакте">вк</a></li>
+    <li><a class="twitter-button" href="www.twitter.com">твитетр</a></li>
+    <li><a class="instagram-button" href="www.instagram.com">инстаграмм</a></li>
+    <li><a class="facebook-button" href="www.facebook.com">фэисбук</a></li>
+    <li><a class="vk-button" href="www.vk.com">вк</a></li>
   </ul>
   </div>
-<div class="footer-documents">
-  <ul class="documents">
-<li><a сclass="documents-button" href="production.html">О производстве</Li>
-<li><a сclass="documents-button" href="provider.html"><src="img/heart.svg" width="15" height="13" alt="сердце">Для поставщиков</a></li>
-<li><a сclass="documents-button" href="documents.html">Наши документы</a></li>
-<li><a сclass="documents-button" href="ecology.html">Экологические стандарты</a></li>
-</ul>
-</div>
+  <div class="footer-documents">
+    <ul class="documents">
+      <li><a class="documents-provider" href="production.html">Для поставщиков</a></li>
+      <li><a class="documents-button" href="provider.html">О производстве</a></li>
+      <li><a class="documents-button" href="documents.html">Наши документы</a></li>
+      <li><a class="documents-button" href="ecology.html">Экологические стандарты</a></li>
+  </ul>
+  </div>
 <p>
 <a class="companion" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy">Сделано в HTML academy 2017</a>
 </p>
