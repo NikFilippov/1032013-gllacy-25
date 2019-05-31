@@ -8,7 +8,7 @@ body {
   line-height: 24px;
   color:#ffffff;
   background-color:#849d8f;
-  }
+}
 
 a {
   text-decoration: none;
@@ -60,7 +60,7 @@ a {
 .basket-link,
 .documents {
   list-style: none;
-  }
+}
 
  .main-navigation a,
  .user-navigation a,
@@ -90,25 +90,29 @@ a {
 .icecream-shop {
   font-size: 24px;
   line-height:30px;
+  font-weight:500;
   color: #323232;
-  }
+}
 
 .features-list {
   font-size: 16px;
   line-height:22px;
+  font-weight:normal;
   color: #323232;
 }
 
 .newsblog {
   font-size: 16px;
   line-height:22px;
+  font-weight:normal;
   color: #323232;
 }
 
 .ways {
   font-size: 24px;
   line-height:30px;
-  }
+  text-decoration:underline;
+}
 
 .ways {
   list-style: none;
@@ -170,11 +174,11 @@ a {
   background-image: url("../img/entrance.svg");
   background-position: left;
   background-repeat: no-repeat;
-  }
+}
 
   .button:hover {
     background-color: #f8f7f4;
-  }
+}
 
  .button-basket {
   text-align: center;
@@ -190,15 +194,15 @@ a {
   background-image: url("../img/basket.svg");
   background-position: left;
   background-repeat: no-repeat;
-  }
+}
 
   .button:hover {
-    background-color: #f8f7f4;
-  }
+   background-color: #f8f7f4;
+}
 
   .social {
-    list-style: none;
-    }
+   list-style: none;
+}
 
 .twitter-button {
   font-size: 0px;
@@ -236,6 +240,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.documents {
+  text-align: center;
+}
+
 .documents-provider {
   font-size: 14px;
   padding: 15px 13px;
@@ -244,9 +252,22 @@ a {
   background-repeat: no-repeat;
 }
 
+.companion {
+    text-align: right;
+}
 
+.companion .companion-logo:hover,
+.companion .companion-logo:hover,{
+   color: #ffffff;
+}
 
-
+.companion-logo {
+  color:#ffffff;
+  font-size: 12px;
+  line-height:18px;
+  font-weight:normal;
+  background-position: right;
+}
 
 .answer {
   font-size: 24px;
@@ -275,32 +296,32 @@ a {
   padding: 13px 39px;
   border-radius: 40px;
   background-color: #f16542;
-  }
+}
 
   .basket-menu a:hover
   .basket-menu a:focus {
     background-color: #f8f7f4;
     list-style: none;
-  }
+}
 
   .basket-menu > li {
     position: relative;
     display: inline-block;
     margin-right: -4px;
-  }
+}
 
-    .basket-menu .sub-menu-basket {
+  .basket-menu .sub-menu-basket {
     margin: 0;
     padding: 0;
     list-style: none;
     background-color: #f8f7f4;
-  }
+}
 
   .sub-menu-basket {
-    font-size: 14px;
-    line-height:16px;
-    color:#323232;
-  }
+   font-size: 14px;
+   line-height:16px;
+   color:#323232;
+}
 
 .creamy-item {
   margin: 0;
@@ -328,22 +349,47 @@ a {
     background-color: #a1b4a9;
     }
 
+  .main-link a,
+  .catalog-link a {
+  color:#ffffff;
+}
+
+.main-link,
+.catalog-link,
+.icecream-link {
+  font-size: 14px;
+  line-height:16px;
+}
+
+.visual-hidden {
+  font-size: 35px;
+  line-height:41px;
+}
+
+.product {
+  font-size: 16px;
+  line-height:22px;
+  font-weight:normal;
+}
+
+.price {
+  font-size: 45px;
+  line-height:45px;
+  }
+
+.product a {
+  color:#ffffff;
+}
+
+.catalog a:active {
+  color:#d07058;
+}
+
+.basket-link a:active {
+  color:#f7f6f3;
+}
 
 
-
-
-
-/* .main-navigation a:hover,
-.main-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus, {
-  background-color: #f8f7f4;
-} */
-
-/* .esc {
-    background-image: url("../img/esc.svg");
-    cursor:pointer;
-    width: #11px;
-    height: #11px;
-    border: none;
-} */
+.popup {
+  display:none;
+}
