@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +18,28 @@ body {
   line-height: 24px;
   color:#ffffff;
   background-color:#849d8f;
+  }
+
+/* body > * {
+  background: rgba(255, 0, 0, 0.3);
 }
+
+body > * > * {
+  background: rgba(255, 225, 0, 0.3);
+}
+
+
+body > * > * > * {
+  background: rgba(0, 0, 225, 0.3);
+}
+
+body > * > * > * > * {
+  background: rgba(0, 25, 225, 0.3);
+} */
+
+
+
+
 
 a {
   text-decoration: none;
@@ -171,14 +202,14 @@ a {
   line-height:16px;
 
   display: inline-block;
-  margin: 20px;
+  margin: 0;
   padding: 13px 39px;
   border-radius: 40px;
   background-color: #a1b4a9;
   background-image: url("../img/entrance.svg");
   background-position: left;
   background-repeat: no-repeat;
-}
+  }
 
   .button:hover {
     background-color: #f8f7f4;
@@ -191,7 +222,7 @@ a {
   line-height:16px;
 
   display: inline-block;
-  margin: 20px;
+  margin: 0;
   padding: 13px 39px;
   border-radius: 40px;
   background-color: #a1b4a9;
@@ -210,7 +241,12 @@ a {
 
 .twitter-button {
   font-size: 0px;
-  padding: 32px 32px;
+  padding:16px;
+  margin-right: 12px;
+  border: 4px solid;
+  border-radius: 32px;
+  border-color: #c2cec7;
+
 
   background-image: url("../img/twitter.svg");
   background-position: left;
@@ -219,7 +255,11 @@ a {
 
 .instagram-button {
   font-size: 0px;
-  padding: 32px 32px;
+  padding:16px;
+  margin-right: 12px;
+  border: 4px solid;
+  border-radius: 32px;
+  border-color: #c2cec7;
 
   background-image: url("../img/instagram.svg");
   background-position: left;
@@ -228,7 +268,11 @@ a {
 
 .facebook-button {
   font-size: 0px;
-  padding: 32px 32px;
+  padding:16px;
+  margin-right: 12px;
+  border: 4px solid;
+  border-radius: 32px;
+  border-color: #c2cec7;
 
   background-image: url("../img/fb.svg");
   background-position: left;
@@ -237,7 +281,11 @@ a {
 
 .vk-button {
   font-size: 0px;
-  padding: 32px 32px;
+  padding:16px;
+  margin-right: 12px;
+  border: 4px solid;
+  border-radius: 32px;
+  border-color: #c2cec7;
 
   background-image: url("../img/vk.svg");
   background-position: left;
@@ -245,7 +293,6 @@ a {
 }
 
 .documents {
-  text-align: center;
   text-decoration:underline;
 }
 
@@ -268,11 +315,6 @@ a {
   text-decoration:underline;
 }
 
-
-.companion {
-    text-align: right;
-}
-
 .companion .companion-logo:hover,
 .companion .companion-logo:hover,{
    color: #ffffff;
@@ -283,8 +325,7 @@ a {
   font-size: 12px;
   line-height:18px;
   font-weight:normal;
-  background-position: right;
-}
+  }
 
 .companion-logo-text {
   color:#ffffff;
@@ -323,7 +364,7 @@ a {
   background-color: #f16542;
 }
 
-  .basket-menu a:hover
+  /* .basket-menu a:hover
   .basket-menu a:focus {
     background-color: #f8f7f4;
     list-style: none;
@@ -340,7 +381,7 @@ a {
     padding: 0;
     list-style: none;
     background-color: #f8f7f4;
-}
+} */
 
   .sub-menu-basket {
    font-size: 14px;
@@ -390,6 +431,14 @@ a {
   line-height:16px;
 }
 
+.catalog-link {
+  text-decoration:underline;
+}
+
+.main-link {
+  text-decoration:underline;
+}
+
 .visual-hidden {
   font-size: 35px;
   line-height:41px;
@@ -398,7 +447,8 @@ a {
 .product {
   font-size: 16px;
   line-height:22px;
-  font-weight:normal;
+  font-weight:500;
+  text-decoration:underline;
 }
 
 .price {
@@ -427,86 +477,278 @@ a {
   display:none;
 }
 
+.login,
+.sub-menu {
+  display:none;
+}
 
+.sub-menu-basket {
+  display:none;
+}
 /* Сетка поставил, включиль, клюшь повернуль пошёль, пошёль, пошёль */
 
-.maine-header  {
-  margin-button: 286px;
-  min-height: 110px;
-}
+
+/* хедер */
+
+.maine-header {
+margin-bottom: 770px;
+  }
+
+.inner-page {
+  margin-bottom: 10px;
+  }
 
 .main-navigation {
   display: flex;
-  min-height: 110px;
+  width: 1200px;
 }
+
 
 .main-header-logo {
-  width: 154;
-  height: 64;
-  padding: 9px 32px 27px;
-  align-items:flex-start;
+  width: 155px;
+  height: 65px;
+  padding-left: 27px;
+  margin-right: 24px;
 }
 
-.main-menu {
-  margin: 0;
-  padding: 0;
-  align-items: stretch;
+.catalog {
+  padding: 23px 0 0;
+  margin-right: 24px;
+}
+
+.delivery {
+  padding: 23px 0 0;
+  margin-right: 24px;
+}
+
+.company {
+  padding: 23px 0 0;
+  margin-right: 377px;
 }
 
 .user-navigation {
-  margin: 0;
-  padding: 0;
-  align-items:flex-end;
+  padding: 23px 0 0;
+  margin-right: 10px;
 }
 
-.container-information {
-  margin: 0;
-  padding: 74px 27px;
-  list-style: none;
+.check-login {
+  padding: 23px 0 0;
+  margin-right: 10px;
 }
 
-.container {
-  padding: 32px 205px;
+.basket {
+  padding: 23px 0 0;
+  margin-left: 10px;
+  padding-right: 27px;
+}
+
+.conteiner-data {
+  display: flex;
+  width: 1200px;
+}
+
+.data {
+  padding-left: 1049px;
+  white-space: pre;
+  padding-right: 27px;
+}
+
+.conteiner-adress {
+  display: flex;
+  width: 1200px;
+}
+
+.adress {
+  padding-left: 928px;
+  white-space: pre;
+  padding-right: 27px;
+}
+
+
+.navigation {
+  display: flex;
+}
+
+.main-link {
+  padding-left: 27px;
+  margin-right: 8px;
   }
 
-.user-navigation-cotainer {
+.catalog-link {
+  padding:0;
+  margin-right: 8px;
+  }
+
+.icecream-link {
+  padding:0;
+  margin: 0;
+}
+
+.visual-hidden {
+  display: inline-block;
+  padding-left: 27px;
+  margin:18px 0;
+}
+/* Хедер конец */
+
+
+.conteiner-intelligence {
   display: flex;
-  margin-right: 27px;
-  margin-left: 375px;
-  padding: 32px
+  width: 1200px;
+  padding: 0 27px 0;
 }
 
 .intelligence {
-  display: flex;
-  justify-content: center;
   width: 1145px;
   height: 305px;
-  margin: 0;
-  padding: 0;
+  padding: 0 27px 0;
 }
 
-.feature-item {
-  width: 450px;
-}
+.content-inner {
+  display:flex;
+  width: 1200px;
+  }
 
-.intelligence-conteiner-wrap {
-  flex-wrap: wrap;
-}
+.conteiner-news-mailing {
+  display: flex;
+  width: 1200px;
+  }
 
 .news {
-  display: flex;
-  justify-content: center;
   width: 560px;
   height: 220px;
-  margin: 0;
+  margin: 40px 20px 40px;
+  padding: 0;
+  flex-wrap: wrap;
+  }
+
+.mailing {
+  width: 560px;
+  height: 220px;
+  margin: 40px 20px 40px;
   padding: 0;
 }
 
-.mailing {
+
+.creamy-list {
   display: flex;
-  justify-content: center;
-  width: 560px;
-  height: 220px;
+  width: 1200px;
+  justify-content: space-between;
+  text-align: center;
+  }
+
+.creamy-item-1 {
+  padding: 358px 27px 10px;
+}
+
+.creamy-item-2 {
+  padding: 0 27px 40px;
+}
+
+.creamy-item-3 {
+  padding: 0 27px 0px;
+}
+
+.price-kilogram {
+  display: inline-block;
+  padding-right: 120px;
+  position: relative;
+  top: -60px;
+  }
+
+.product {
+  display: inline-block;
+  position: relative;
+  top: -25px;
+}
+
+.main-footer {
+  display: flex;
+  padding: 40px 0 30px;
+  margin-top: 470px;
+  width: 1200px;
+}
+
+.main-footer-inner {
+  display: flex;
+  padding: 40px 0 30px;
+  margin-top: 177px;
+  width: 1200px;
+  }
+
+.footer-social {
   margin: 0;
-  padding: 0;
+  width: 186px;
+  margin-right: 27px;
+}
+
+.footer-documents {
+  margin: 0;
+  width: 330px;
+  margin-left: 214px;
+  margin-right: 230px;
+}
+
+.companion-conteiner {
+  margin: 0;
+  width: 188px;
+  margin-left: 27px;
+  }
+
+.social {
+  display: flex;
+}
+
+.footer-documents {
+  display: flex;
+}
+
+.documents-provider,
+.documents-button {
+  white-space: pre;
+}
+
+.production {
+  margin-left: 55px;
+}
+
+.documents-provider {
+  margin-left: 33px;
+}
+
+.icecream-shop {
+display: inline-block;
+padding: 15px 20px 0px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.feature-item-1 {
+  width: 560px;
+  background-image: url("../img/ice-cream.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.feature-item-3 {
+  width: 560px;
+  background-image: url("../img/cow.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.feature-item-2 {
+  width: 560px;
+  background-image: url("../img/eco.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.feature-item-4 {
+  width: 560px;
+  background-image: url("../img/thermometer.svg");
+  background-position: left;
+  background-repeat: no-repeat;
 }
