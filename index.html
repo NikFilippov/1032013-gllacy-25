@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
       </head>
   <body>
-<header class="maine-header">
+<header class="maine-header conteiner">
   <nav class="main-navigation">
     <a href="index.html" class="main-header-logo">
     <img src="img/logo-gllacy.svg" width="154" height="64" alt="логотип glacyshop">
   </a>
     <ul class="main-menu">
-      <li><a href="catalog.html" class="catalog">Каталог</a>
+      <li><a href="inner.html" class="catalog">Каталог</a>
         <ul class="sub-menu">
             <li><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
@@ -26,22 +26,21 @@
       <li><a href="company.html" class="company">О Компании</a></li>
     </ul>
       <ul class="user-navigation">
-       <li class="search-link"><a href="search.html">поиск</a></li>
-       <li><form><input type="search" name="search" placeholder="Что ищем?" class="login"></form></li>
-    </ul>
-    <ul class="check-login">
-      <li class="login-link"><a href="login.html"></a>
+       <li class="search-link"><a href="search.html">поиск</a><form><input type="search" name="search" placeholder="Что ищем?" class="login"></form></li>
+      </ul>
+    <div class="check-login login-link">
+      <a href="login.html"></a>
         <form action="https://echo.htmlacademy.ru" method="post">
             <input type="email" name="mail" placeholder="Электронная почта" class="login">
             <input type="password" name="password" placeholder="пароль" class="login">
             <input type="submit" value="Вход" class="button">
             <a href="forgotpassword.html" class="login">Забыл пароль</a>
             <a href="registration.html" class="login">Новая регистрация</a>
-        </form></li>
-      </ul>
-      <ul class="basket">
-        <li class="basket-link"><a href="basket.html" class="button-basket">Пусто</a></li>
-      </ul>
+        </form>
+      </div>
+      <div class="basket basket-link">
+        <a href="basket.html" class="button-basket">Пусто</a>
+      </div>
   </nav>
   <div class="conteiner-data">
       <span class="data">c 10 до 20, ежедневно</span>
@@ -51,16 +50,14 @@
   </div>
 </header>
 <main class="content">
-  <div class="conteiner-intelligence">
+  <div class="conteiner-intelligence conteiner">
 <section class="intelligence">
   <h1 class="icecream-shop">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h1>
   <ul class="features-list">
-    <li class="feature-item-1">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-    <li class="feature-item-3">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает дополнительное сотрудничество.</li>
-  </ul>
-  <ul class="features-list">
-    <li class="feature-item-2">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные игридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-    <li class="feature-item-4">Доставка нашего мороженного до заказчика осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
+    <li class="feature-item-ice-cream">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+    <li class="feature-item-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает дополнительное сотрудничество.</li>
+    <li class="feature-item-eco">Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные игридиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+    <li class="feature-item">Доставка нашего мороженного до заказчика осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.</li>
   </ul>
 </section>
 </div>
@@ -70,15 +67,17 @@
    <a class="ways" href="news.html">10 способов сервировки фруктовых щербетов к столу</a>
 </section>
 <section class="mailing">
-  <p class="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не сласть всякой ненужной ерунды. Честно=)</p>
+  <div class="mailing-background">
+    <p class="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не сласть всякой ненужной ерунды. Честно=)</p>
    <form action="https://echo.htmlacademy.ru" method="post">
      <input type="email" name="mail" placeholder="Электронная почта">
      <input type="submit" value="Отправить">
    </form>
-  </section>
-</div>
+   </div>
+ </section>
+ </div>
 </main>
-<footer class="main-footer">
+<footer class="main-footer conteiner">
   <div class="footer-social">
   <ul class="social">
     <li><a class="twitter-button" href="www.twitter.com">твитетр</a></li>
@@ -87,21 +86,18 @@
     <li><a class="vk-button" href="www.vk.com">вк</a></li>
   </ul>
   </div>
-<div class="footer-documents">
+<div class="footer-documents conteiner">
   <ul class="documents">
     <li><a class="documents-provider" href="production.html">Для поставщиков</a></li>
-    <li><a class="documents-button production" href="provider.html">О производстве</a></li>
-  </ul>
-  <ul class="documents">
     <li><a class="documents-button" href="documents.html">Наши документы</a></li>
+    <li><a class="documents-button production" href="provider.html">О производстве</a></li>
     <li><a class="documents-button" href="ecology.html">Экологические стандарты</a></li>
 </ul>
 </div>
 <div class="companion-conteiner">
 <p class="companion">
   <a class="companion-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy"></a>
-  <span class="companion-logo">Сделано в </span>
-  <a class="companion-logo-text" href="https://htmlacademy.ru">HTML Academy ©</a>
+  <span class="companion-logo">Сделано в </span><a class="companion-logo-text" href="https://htmlacademy.ru">HTML Academy ©</a>
   <span class="companion-logo">2019</span>
 </p>
 </div>

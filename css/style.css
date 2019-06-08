@@ -20,7 +20,7 @@ body {
   background-color:#849d8f;
   }
 
-/* body > * {
+body > * {
   background: rgba(255, 0, 0, 0.3);
 }
 
@@ -35,10 +35,12 @@ body > * > * > * {
 
 body > * > * > * > * {
   background: rgba(0, 25, 225, 0.3);
-} */
+}
 
 
-
+.main-menu {
+  display: flex;
+}
 
 
 a {
@@ -59,9 +61,7 @@ a {
 
 .main-menu > li {
   position: relative;
-  display: inline-block;
-  margin-right: -4px;
-}
+  }
 
   .main-menu .sub-menu {
   margin: 0;
@@ -125,13 +125,6 @@ a {
   color: #323232;
 }
 
-.features-list {
-  font-size: 16px;
-  line-height:22px;
-  font-weight:normal;
-  color: #323232;
-}
-
 .newsblog {
   font-size: 16px;
   line-height:22px;
@@ -188,12 +181,18 @@ a {
 
 .mailing {
   background-color: #ffffff;
-  background-image: url("../img/mail.jpg");
+  background-image: url("../img/bg-post.svg");
   min-height: 220px;
   border-radius: 10px;
   background-position: left;
   background-repeat: no-repeat;
+  padding: 6px;
 }
+
+.mailing-background {
+  background-color:#f8f7f4;
+  }
+
 
 .button {
   text-align: center;
@@ -290,10 +289,6 @@ a {
   background-image: url("../img/vk.svg");
   background-position: left;
   background-repeat: no-repeat;
-}
-
-.documents {
-  text-decoration:underline;
 }
 
 .documents-provider {
@@ -439,10 +434,6 @@ a {
   text-decoration:underline;
 }
 
-.visual-hidden {
-  font-size: 35px;
-  line-height:41px;
-}
 
 .product {
   font-size: 16px;
@@ -485,8 +476,24 @@ a {
 .sub-menu-basket {
   display:none;
 }
+
+.catalog-creamy {
+  font-size: 35px;
+  line-height:41px;
+  margin: 0;
+  padding: 0;
+}
+
 /* Сетка поставил, включиль, клюшь повернуль пошёль, пошёль, пошёль */
 
+
+
+.conteiner {
+ width: 1200px;
+ padding-left: 27px;
+ padding-right: 27px;
+ margin: 0 auto;
+}
 
 /* хедер */
 
@@ -500,15 +507,15 @@ margin-bottom: 770px;
 
 .main-navigation {
   display: flex;
-  width: 1200px;
 }
 
 
 .main-header-logo {
   width: 155px;
   height: 65px;
-  padding-left: 27px;
-  margin-right: 24px;
+  padding-top: 10px;
+  /* padding-left: 27px;
+  margin-right: 24px; */
 }
 
 .catalog {
@@ -523,12 +530,11 @@ margin-bottom: 770px;
 
 .company {
   padding: 23px 0 0;
-  margin-right: 377px;
-}
+  }
 
 .user-navigation {
-  padding: 23px 0 0;
   margin-right: 10px;
+  margin-left: auto;
 }
 
 .check-login {
@@ -543,23 +549,19 @@ margin-bottom: 770px;
 }
 
 .conteiner-data {
-  display: flex;
-  width: 1200px;
+text-align: right;
 }
 
 .data {
-  padding-left: 1049px;
   white-space: pre;
   padding-right: 27px;
 }
 
 .conteiner-adress {
-  display: flex;
-  width: 1200px;
+  text-align: right;
 }
 
 .adress {
-  padding-left: 928px;
   white-space: pre;
   padding-right: 27px;
 }
@@ -570,7 +572,7 @@ margin-bottom: 770px;
 }
 
 .main-link {
-  padding-left: 27px;
+  padding: 0;
   margin-right: 8px;
   }
 
@@ -584,17 +586,10 @@ margin-bottom: 770px;
   margin: 0;
 }
 
-.visual-hidden {
-  display: inline-block;
-  padding-left: 27px;
-  margin:18px 0;
-}
 /* Хедер конец */
 
 
 .conteiner-intelligence {
-  display: flex;
-  width: 1200px;
   padding: 0 27px 0;
 }
 
@@ -604,38 +599,41 @@ margin-bottom: 770px;
   padding: 0 27px 0;
 }
 
-.content-inner {
-  display:flex;
-  width: 1200px;
-  }
-
 .conteiner-news-mailing {
   display: flex;
   width: 1200px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin: 0 auto;
   }
 
 .news {
   width: 560px;
   height: 220px;
-  margin: 40px 20px 40px;
-  padding: 0;
-  flex-wrap: wrap;
+  margin-right: 20px;
+  margin-top: 40px;
+  padding: 20px;
   }
 
 .mailing {
   width: 560px;
   height: 220px;
-  margin: 40px 20px 40px;
-  padding: 0;
+  margin-left: 20px;
+  margin-top: 40px;
+  padding: 20px;
 }
-
 
 .creamy-list {
   display: flex;
   width: 1200px;
   justify-content: space-between;
   text-align: center;
+  padding: 358px 27px 10px;
   }
+
+.creamy-item {
+  position: relative;
+}
 
 .creamy-item-1 {
   padding: 358px 27px 10px;
@@ -651,16 +649,10 @@ margin-bottom: 770px;
 
 .price-kilogram {
   display: inline-block;
-  padding-right: 120px;
-  position: relative;
-  top: -60px;
+  position: absolute;
+  top: 210px;
+  left: 15px;
   }
-
-.product {
-  display: inline-block;
-  position: relative;
-  top: -25px;
-}
 
 .main-footer {
   display: flex;
@@ -703,17 +695,29 @@ margin-bottom: 770px;
   display: flex;
 }
 
+.documents {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  text-decoration:underline;
+}
+
+.documents li {
+  width: 50%;
+  margin-bottom: 0 0 12px;
+  }
+
+.production {
+  margin-left: 23px;
+}
+
+.documents-button {
+  margin-left: 32px;
+}
+
 .documents-provider,
 .documents-button {
   white-space: pre;
-}
-
-.production {
-  margin-left: 55px;
-}
-
-.documents-provider {
-  margin-left: 33px;
 }
 
 .icecream-shop {
@@ -723,32 +727,34 @@ padding: 15px 20px 0px;
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  font-size: 16px;
+  line-height:22px;
+  font-weight:normal;
+  color: #323232;
 }
 
-.feature-item-1 {
-  width: 560px;
+.feature-item-ice-cream {
   background-image: url("../img/ice-cream.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-}
+  }
 
-.feature-item-3 {
-  width: 560px;
+.feature-item-cow {
   background-image: url("../img/cow.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-}
+  }
 
-.feature-item-2 {
-  width: 560px;
+.feature-item-eco {
   background-image: url("../img/eco.svg");
-  background-position: left;
-  background-repeat: no-repeat;
-}
+  }
 
-.feature-item-4 {
-  width: 560px;
+.feature-item {
   background-image: url("../img/thermometer.svg");
+  }
+
+.features-list li {
+  width: 50%;
+  padding-left: 65px;
+  margin-bottom: 20px;
   background-position: left;
   background-repeat: no-repeat;
 }
