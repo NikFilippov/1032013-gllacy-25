@@ -959,9 +959,8 @@ margin: 0;
   top:21px;
   left: 15px;
   padding-left: 15px;
-  border: solid 1px rgba(178, 178, 178, 0.52)
+  border: solid 1px rgba(178, 178, 178, 0.52);
 }
-
 
 .login-link a{
   color: #323232;
