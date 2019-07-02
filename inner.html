@@ -34,10 +34,14 @@
      <div class="entrance-text">Вход</div></a>
       <form class="login-hover" action="https://echo.htmlacademy.ru" method="post">
           <input type="email" name="mail" placeholder="Электронная почта" class="login-email">
-          <input type="password" name="password" placeholder="пароль" class="login-password">
-          <div class="entrance-password-registration"><input class="entrance main-button" type="submit" value="Вход">
-          <div><a href="forgotpassword.html" class="forgot-password">Забыл пароль?</a>
-          <a href="registration.html" class="new-registration">Новая регистрация</a></div></div>
+          <input type="password" name="password" placeholder="Пароль" class="login-password">
+          <div class="entrance-password-registration">
+            <input class="entrance main-button" type="submit" value="Войти">
+          <div>
+            <a href="forgotpassword.html" class="registration-password">Забыл пароль?</a>
+            <a href="registration.html" class="registration-password">Новая регистрация</a>
+        </div>
+        </div>
       </form>
     </div>
     <div class="basket basket-link-inner">
@@ -55,7 +59,7 @@
             </ul>
             <div class="total-order">
             <span class="total"> Итого: 750 руб.</span>
-            <a href="#" class="order main-button">Оформить заказ<a></div>
+            <a href="#" class="order main-button">Оформить заказ</a></div>
               </div>
               </div>
         </nav>
@@ -74,6 +78,40 @@
     </ul>
     <h1 class="catalog-creamy">Сливочное мороженое</h1>
   <section>
+    <form class="toppings">
+      <div class="list-fillers-conteiner"><p class="fillers">Сортировка:</p>
+        <select class="list-fillers">
+          <option>по популярности</option>
+          <option>сначала недорогие</option>
+          <option>сначала дорогие</option>
+          <option>по жирности</option>
+        </select></div>
+      <div><p class="fillers">Цена: 100 руб. – 500 руб.</p>
+        <div class="price-control">
+            <div class="scale"><div class="bar"></div></div>
+          <button class="toggle toggle-min"></button>
+          <button class="toggle toggle-max"></button>
+        </div>
+      </div>
+      <div><p class="fillers">Жирность:</p>
+        <div class="radio-button">
+          <input class="interest-button" type="radio" value="0" name="zero" id="0%"><label class="interest" for="0%">0%</label>
+          <input class="interest-button" type="radio" value="0" name="to-10%" id="0%" checked><label class="interest" for="0%">до 10%</label>
+          <input class="interest-button" type="radio" value="0" name="to-30%" id="0%"><label class="interest" for="0%">до 30%</label>
+          <input class="interest-button" type="radio" value="0" name="above-30%" id="0%"><label class="interest" for="0%">выше 30%</label>
+        </div>
+      </div>
+      <div class="fillers-checkbox"><p class="fillers">Наполнители:</p>
+      <div class="checkbox">
+        <input type="checkbox" name="chocolate" checked><label class="checkbox-label" for="chocolate">шоколадные</label>
+        <input type="checkbox" name="powders" checked><label class="checkbox-label" for="powders">сахарные присыпки</label>
+        <input type="checkbox" name="fruits"><label class="checkbox-label" for="fruits">фрукты</label>
+        <input type="checkbox" name="syrups"><label class="checkbox-label" for="syrups">сиропы</label>
+        <input type="checkbox" name="jams"><label class="checkbox-jams" for="chocolate">джемы</label>
+      </div>
+    </div>
+      <button class="apply" type="submit">Применить</button>
+    </form>
   <ul class="creamy-list creamy-item">
     <li class="creamy-fast creamy-view">
       <div class="transparency">
@@ -204,7 +242,7 @@
     <li><a class="documents-button standards" href="ecology.html">Экологические стандарты</a></li>
 </ul>
 <div class="companion-conteiner">
-<a class="companion-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy"></a>
+<a class="companion-logo-academy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html academy"></a>
 <p class="companion">
   <span class="companion-logo">Сделано в </span><a class="companion-logo-text" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy ©</a><span class="companion-logo">2019</span>
 </p>
