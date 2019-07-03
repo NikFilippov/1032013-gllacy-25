@@ -800,6 +800,7 @@ li:hover .transparency {
           justify-content: space-between;
   padding: 0;
   z-index: 1;
+  margin: 0;
 }
 
 .creamy-item li {
@@ -1925,7 +1926,7 @@ select {
   width: 220px;
   background-color: #aabbb1;
   border-radius: 30px;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-left: 22px;
   padding-right: 22px;
   cursor: pointer;
@@ -1935,12 +1936,12 @@ select {
   border-radius: 50%;
   background-color: #ababab;
   border:none;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid #ffffff;
   position: absolute;
-  top: 5px;
+  top: 7px;
   left: 5;
   cursor: pointer;
 }
@@ -1994,12 +1995,10 @@ select {
 .radio-button input[type="radio"]:checked + .interest::after {
   content:"";
   border-radius:50%;
-  border: 6px solid #e6ebe9;
-  width: 8px;
-  height: 6px;
+  border: 5px solid #e6ebe9;
   position: absolute;
-  bottom: 4px;
-  left: 6px;
+  bottom: 5px;
+  left: 7px;
 }
 
 .interest-button {
@@ -2059,8 +2058,8 @@ select {
 
 .checkbox-label {
   position: relative;
-  padding-left: 15px;
-  margin-right: 26px;
+  padding-left: 13px;
+  margin-right: 22px;
 }
 
 .checkbox input[type="checkbox"]+label::before {
@@ -2109,4 +2108,47 @@ div .navigation-drop-parent::before {
   display: block;
   top: 27px;
   right: 0px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.checkbox:last-child {
+  margin: 0;
+}
+
+.pages {
+width: 100%;
+margin-top: 110px;
+margin-bottom: -20px;
+text-align: right;
+}
+
+.page-section {
+display: inline-block;
+width: 26px;
+height: 26px;
+margin-right: 1px;
+padding-top: 4px;
+border-radius: 50%;
+text-align: center;
+font-size: 16px;
+line-height: 18px;
+color: #fff;
+text-decoration: none;
+}
+
+.page-section-active {
+  width: 26px;
+  height: 26px;
+  padding-top: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #323232;
+  text-align: center;
+}
+
+.page-section:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
