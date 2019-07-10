@@ -335,6 +335,7 @@ a {
   border-radius: 10px;
   background-position: 0 0;
   background-repeat: repeat;
+  margin-top: 2px;
 }
 
 .mailing-background {
@@ -610,7 +611,7 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: -27px;
+  margin-top: -31px;
 }
 
 .main-link a {
@@ -638,6 +639,8 @@ a {
   font-weight: 500;
   text-decoration: underline;
   margin-top: 6px;
+  width: 260px;
+  margin-left: 4px;
 }
 
 .price {
@@ -835,7 +838,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
+  padding-top: 14px;
   padding-bottom: 30px;
   width: 1200px;
   margin: 0 auto;
@@ -847,7 +850,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 30px;
   width: 1200px;
   margin: 0 auto;
@@ -859,14 +862,14 @@ a {
   position: relative;
   width: 190px;
   height: 64px;
-  margin-left: auto;
+  margin-left: 179px;
 }
 
 .companion-conteiner-inner {
   position: relative;
   width: 190px;
   height: 64px;
-  margin-left: 180px;
+  margin-left: 179px;
   margin-top: 3px;
 }
 
@@ -887,7 +890,7 @@ a {
   flex-wrap: wrap;
   padding-left: 0;
   text-decoration: underline;
-  margin-top: 17px;
+  margin-top: 13px;
 }
 
 .documents-inner {
@@ -1346,7 +1349,7 @@ a {
   padding-left: 77px;
   padding-bottom: 10px;
   position: relative;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-right: 11px;
 }
 
@@ -1404,29 +1407,31 @@ a {
 }
 
 .footer-social li {
-  margin-right: 9px;
+  margin-right: 12px;
   opacity: 0.8;
 }
 
 .social-button:hover {
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
-.social-button:hover svg {
-  opacity: 1;
+.social-button:active {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-button-svg:hover {
+  color: #ffffff;
 }
 
 .social-button-svg:active {
-  background-color: #e9e9e9;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.7);
+  color: #e9e9e9;
 }
 
 .social-button {
-  border: 4px solid rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.5);
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   opacity: 80%;
   vertical-align: top;
@@ -1813,7 +1818,7 @@ a {
   display: block;
   position: relative;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .conteiner-feedback {
@@ -1875,7 +1880,7 @@ a {
 .office-adress {
   margin: 0;
   margin-bottom: 3px;
-  margin-top: -2px;
+  margin-top: -1px;
   width: 150px;
 }
 
@@ -2075,7 +2080,7 @@ a {
   font-size: 16px;
   line-height: 18px;
   padding-top: 8px;
-  padding-left: 16px;
+  padding-left: 20px;
 }
 
 .apply {
@@ -2112,7 +2117,7 @@ a {
 
 .checkbox-label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 26px;
   margin-right: 22px;
 }
 
@@ -2120,8 +2125,8 @@ a {
   content: "";
   position: absolute;
   left: -3px;
-  width: 23px;
-  height: 23px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #fff;
   border-radius: 3px;
 }
@@ -2154,11 +2159,11 @@ a {
   left: 1px;
 }
 
-div .navigation-drop-parent {
+.navigation-drop-parent {
   position: relative;
 }
 
-div .navigation-drop-parent::before {
+.navigation-drop-parent::before {
   content: "";
   position: absolute;
   width: 50px;
@@ -2174,7 +2179,7 @@ div .navigation-drop-parent::before {
 
 .pages {
   width: 100%;
-  margin-top: 48px;
+  margin-top: 45px;
   padding-bottom: 30px;
   text-align: right;
   border-bottom: solid 1px rgb(169, 187, 177);
