@@ -1464,6 +1464,10 @@ a {
   display: none;
 }
 
+.popup-show {
+  display: block;
+}
+
 .answer {
   font-size: 24px;
   line-height: 28px;
